@@ -2,8 +2,8 @@
 nav {
   display: flex;
   justify-content: space-between;
+  padding: 0 50px;
   align-items: center;
-  padding: 0 100px;
   height: 80px;
   background-color: antiquewhite;
 
@@ -11,5 +11,41 @@ nav {
     color: v.$text-color;
     font-size: 1.8rem;
     font-weight: 300;
+  }
+
+  .right a {
+    color: v.$text-color;
+    font-size: 1.2rem;
+    margin: 0 10px;
+  }
+}
+
+nav .right a:last-child {
+  color: v.$bg-color;
+  background-color: v.$text-color;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+@media (max-width: 700px) {
+  nav {
+    padding: 0 20px;
+
+    .right a {
+      font-size: 1.8rem;
+    }
+
+    .right a:last-child {
+      color: v.$text-color;
+      background-color: transparent;
+      padding: 0;
+    }
+    .right span {
+      display: none;
+    }
   }
 }
