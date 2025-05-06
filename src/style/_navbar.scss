@@ -2,21 +2,30 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
   align-items: center;
   height: 80px;
-  background-color: antiquewhite;
 
   .left a {
     color: v.$text-color;
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: v.$link-color;
+    }
   }
 
   .right a {
+    font-weight: 300;
     color: v.$text-color;
     font-size: 1.2rem;
     margin: 0 10px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: v.$link-color;
+    }
   }
 }
 
@@ -25,6 +34,10 @@ nav .right a:last-child {
   background-color: v.$text-color;
   padding: 5px 15px;
   border-radius: 5px;
+
+  &:hover {
+    background-color: v.$link-color;
+  }
 }
 
 nav .right a span {

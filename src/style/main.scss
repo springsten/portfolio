@@ -1,6 +1,7 @@
-@use './base.scss';
-@use './variables.scss' as v;
-@use './navbar.scss';
+@use './base';
+@use './variables' as v;
+@use './navbar';
+@use './hero';
 
 body {
   font-family: 'Bricolage Grotesque', sans-serif;
@@ -10,4 +11,10 @@ body {
 a {
   color: v.$link-color;
   text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

@@ -1,0 +1,30 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin: 100px 0;
+  gap: 20px;
+
+  .text {
+    flex: 5;
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .headshot {
+    flex: 2;
+
+    img {
+      width: 400px;
+      border-radius: 50%;
+    }
+  }
+}
