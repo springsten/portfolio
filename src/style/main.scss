@@ -2,9 +2,9 @@
 @use './variables' as v;
 @use './navbar';
 @use './hero';
+@use './skills';
 
 body {
-  font-family: 'Bricolage Grotesque', sans-serif;
   background-color: v.$bg-color;
 }
 
@@ -17,4 +17,22 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
 }

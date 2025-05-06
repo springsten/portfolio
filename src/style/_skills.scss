@@ -1,0 +1,31 @@
+@use './variables';
+
+.skills-section {
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      padding: 10px 20px;
+      margin: 10px;
+      border: 1px solid #a09f9f;
+      border-radius: 5px;
+      gap: 20px;
+
+      img {
+        max-width: 30px;
+        object-fit: contain;
+      }
+    }
+  }
+}

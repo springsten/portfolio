@@ -5,10 +5,13 @@ nav {
   align-items: center;
   height: 80px;
 
-  .left a {
-    color: v.$text-color;
+  h1 {
     font-size: 2rem;
     font-weight: 400;
+  }
+
+  .left a {
+    color: v.$text-color;
     transition: all 0.2s ease;
 
     &:hover {
