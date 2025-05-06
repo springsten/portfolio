@@ -1,0 +1,15 @@
+@use './variables.scss' as v;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  height: 80px;
+  background-color: antiquewhite;
+
+  .left a {
+    color: v.$text-color;
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+}

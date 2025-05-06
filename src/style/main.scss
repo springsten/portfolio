@@ -1,0 +1,13 @@
+@use './base.scss';
+@use './variables.scss' as v;
+@use './navbar.scss';
+
+body {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  background-color: v.$bg-color;
+}
+
+a {
+  color: v.$link-color;
+  text-decoration: none;
+}
