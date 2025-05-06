@@ -3,6 +3,7 @@
 @use './navbar';
 @use './hero';
 @use './skills';
+@use './projects';
 
 body {
   background-color: v.$bg-color;
