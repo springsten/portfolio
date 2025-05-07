@@ -5,7 +5,7 @@
 }
 
 .project-card {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -13,7 +13,11 @@
 
   h4 {
     margin: 10px 0;
-    font-weight: 200;
+    font-weight: 400;
+  }
+
+  .project-text {
+    font-size: 1rem;
   }
 }
 
