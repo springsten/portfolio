@@ -12,33 +12,33 @@
 </head>
 
 <body>
+  <!-- navbar -->
+  <nav class="container">
+    <div class="left">
+      <a href="/" class="logo">
+        <h1>Sakarias Näslund</h1>
+      </a>
+    </div>
+    <div class="right">
+      <a href="http://github.com/springsten" target="_blank" rel="no-referrer">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+
+      <a href="http://www.linkedin.com/in/sakarias-näslund-4a1900328" target="_blank" rel="no-referrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="#contact">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Kontakt</span>
+      </a>
+    </div>
+  </nav>
   <div class="container">
-    <!-- navbar -->
-    <nav>
-      <div class="left">
-        <a href="/" class="logo">
-          <h1>Sakarias Näslund</h1>
-        </a>
-      </div>
-      <div class="right">
-        <a href="http://github.com/springsten" target="_blank" rel="no-referrer">
-          <i class="fa-brands fa-github"></i>
-          <span>GitHub</span>
-        </a>
-
-        <a href="http://www.linkedin.com/in/sakarias-näslund-4a1900328" target="_blank" rel="no-referrer">
-          <i class="fa-brands fa-linkedin"></i>
-          <span>LinkedIn</span>
-        </a>
-
-        <a href="#contact">
-          <i class="fa-solid fa-envelope"></i>
-          <span>Kontakt</span>
-        </a>
-      </div>
-    </nav>
-
-    <main>
+  <main>
+   
       <!-- hero -->
       <section class="hero-section">
         <div class="text">
@@ -49,9 +49,8 @@
             varför saker fungerar som de gör. Jag gillar att klura ut hur
             allting hänger ihop bakom kulisserna, från databasen till det som
             syns i webbläsaren. Här kan du se några av de projekt jag har
-            gjort hittills och lära känna mig lite bättre. Tveka inte att
-            <a href="mailto:sakarias.naslund@gmail.com">skicka ett mail</a> om
-            du vill veta mer!
+            gjort hittills och lära känna mig lite bättre. Vill du veta mer? Tveka inte att
+            skicka ett mail till sakarias(at)gmail.com eller använd kontaktformuläret nedan.
           </p>
           <div class="links">
             <a href="#skills">
@@ -71,6 +70,9 @@
         <div class="headshot">
           <img src="./src/assets/img/Image.svg" alt="Ai-genererad bild av mig när jag sitter och kodar" />
         </div>
+        <a href="#skills" class="scroll-down">
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
       </section>
 
       <!-- skills -->
@@ -114,7 +116,7 @@
 
       <!-- projects -->
       <section id="projects" class="projects-section">
-        <h2>Mina projekt</h2>
+        <h2 class="projects-heading">Mina projekt</h2>
         <p>
           I skolan har vi fått göra olika uppgifter, både individuella och i
           grupp. Här är några av projekten jag gjort i skolan. Klicka för att se projektet på GitHub!
@@ -143,7 +145,7 @@
                 alt="" /></a>
             <h4>Gruppuppgift</h4>
             <p class="project-text">
-              Frontend för webshop, skrivet i TypeScript utan ramverk. 
+              Frontend för webshop, skrivet i TypeScript utan ramverk.
               Utmaningen låg i att utveckla ett system för att lägga produkter i shopping cart och spara dem där.
             </p>
           </div>
@@ -155,7 +157,8 @@
               <img class="project-image" src="./src/assets/projects/localhost_5174_ (2).png" alt="" /></a>
             <h4>Individuell uppgift</h4>
             <p class="project-text">
-              Klassisk CRUD-applikation skriven i TypeScript. Man kan läsa och skriva todos, samt radera och markera som klara.
+              Klassisk CRUD-applikation skriven i TypeScript. Man kan läsa och skriva todos, samt radera och markera som
+              klara.
             </p>
           </div>
           <div class="project-card">
@@ -166,9 +169,10 @@
               <img class="project-image" src="./src/assets/projects/localhost_5176_animals (1).png" alt="" /></a>
             <h4>Gruppuppgift</h4>
             <p class="project-text">
-              Vi fick i uppgift att göra ett virtuellt zoo med djur från ett API vi fick tillhandahållet. 
-              I React skulle vi skriva en applikation som vid jämna mellanrum kollar ifall djuren har blivit matade och 
-              se till att det finns funktionalitet för att mata djuren. Om djuren inte har blivit matade så ska de markeras som hungriga.
+              Vi fick i uppgift att göra ett virtuellt zoo med djur från ett API vi fick tillhandahållet.
+              I React skulle vi skriva en applikation som vid jämna mellanrum kollar ifall djuren har blivit matade och
+              se till att det finns funktionalitet för att mata djuren. Om djuren inte har blivit matade så ska de
+              markeras som hungriga.
             </p>
           </div>
         </div>
@@ -176,9 +180,62 @@
 
 
         <!-- contact -->
-        <section id="contact"></section>
-    </main>
+        <section id="contact" class="contact-section">
+          <div class="contact-container">
+            <h2 class="contact-title">Kontakt</h2>
+            <p class="contact-description">
+              Vill du veta mer om mig? Har du ett spännande uppdrag eller behöver du hjälp med något? Tveka inte att
+              höra av dig!
+            </p>
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+              <!-- Web3Forms Access Key -->
+              <input type="hidden" name="access_key" value="c98a8709-fb8f-46df-b683-92b7d0467650">
+
+              <!-- Form fields -->
+              <input type="text" name="name" placeholder="Namn" required>
+              <input type="email" name="email" placeholder="E-postadress" required>
+              <textarea name="message" placeholder="Ditt meddelande" required></textarea>
+
+              <!-- Honeypot (Spam Protection) -->
+              <input type="checkbox" name="botcheck" class="hidden">
+
+              <!-- Submit Button -->
+              <button type="submit">Skicka</button>
+            </form>
+          </div>
+        </section>
+    </div>
+
+    <!-- footer  -->
+    <footer class="footer-section">
+      <div class="footer-content">
+        <ul class="footer-links">
+          <li><a href="cv.pdf" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file"></i>
+            <span>CV</span></a></li>
+
+          <li><a href="http://github.com/springsten" target="_blank" rel="no-referrer">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+          <li> <a href="http://www.linkedin.com/in/sakarias-näslund-4a1900328" target="_blank" rel="no-referrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+          <li><a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Kontakt</span>
+          </a>
+        </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
   </div>
+  
   <script type="module" src="/src/main.js"></script>
 </body>
 

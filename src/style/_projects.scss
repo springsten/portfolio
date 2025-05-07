@@ -1,40 +1,50 @@
 @use './variables' as v;
 
-.projects-section {
-  padding: 2rem;
+.projects-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
 }
 
-.project-card {
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-
-  h4 {
-    margin: 10px 0;
-    font-weight: 400;
-  }
-
-  .project-text {
+.projects-section {
+  padding: 2rem;
+  p {
     font-size: 1rem;
   }
 }
 
+.project-card {
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+
+  h4 {
+    margin: 6px 0;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .project-text {
+    font-size: 0.9rem;
+  }
+}
+
 .project-card:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .project-image {
   width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
+  height: 200px; // Begränsa höjden
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -43,4 +53,10 @@
   font-size: 1.6rem;
   margin-bottom: 20px;
   color: v.$text-color;
+}
+
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -4,9 +4,27 @@
 @use './hero';
 @use './skills';
 @use './projects';
+@use './contact';
+@use './footer';
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background-color: v.$bg-color;
+  background-color: #dcd9d4;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
 }
 
 a {
@@ -36,4 +54,11 @@ p {
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.5;
+}
+
+input::placeholder {
+  font-family: 'Inter', sans-serif;
+}
+textarea::placeholder {
+  font-family: 'Inter', sans-serif;
 }
