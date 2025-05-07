@@ -63,3 +63,13 @@ nav .right a span {
     }
   }
 }
+
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  .right {
+    display: none;
+  }
+}
