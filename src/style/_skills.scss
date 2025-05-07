@@ -1,15 +1,21 @@
 @use './variables';
 
 .skills-section {
+  padding-top: 20px;
+  min-height: 500px;
+  margin-bottom: 50px;
   h2 {
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 20px;
   }
 
   .cells {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 20px;
 
     .cell {
       display: flex;
