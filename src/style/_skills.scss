@@ -42,7 +42,7 @@
 
     .cell {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      background-color: white;
+      background-color: whitesmoke;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -70,8 +70,11 @@
   .skills-section {
     padding: 0;
 
-    .cells {
-      padding: 0;
+    .cell {
+      background-color: whitesmoke;
+      height: 40px;
+      width: 300px;
+      margin: 4px;
     }
   }
 }
@@ -80,9 +83,14 @@
   .skills-section {
     padding: 0;
 
-    .cells .cell {
-      height: 50px;
-      width: 300px;
+    .cells {
+      gap: 2px;
+      .cell {
+        background-color: whitesmoke;
+        height: 40px;
+        width: 300px;
+        margin: 4px;
+      }
     }
   }
 }
