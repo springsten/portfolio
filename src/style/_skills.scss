@@ -1,11 +1,30 @@
 @use './variables';
 
 .skills-section {
+  .skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    font-family: 'Inter', sans-serif;
+
+    li {
+      font-size: 0.8rem;
+      color: #656565;
+      border-left: 2px solid #ccc;
+      padding-left: 0.5rem;
+      margin: 0;
+      line-height: 1.4;
+    }
+  }
   min-height: 300px;
   margin-bottom: 50px;
   padding: 20px;
   p {
     font-size: 1rem;
+    text-align: center;
   }
   h2 {
     text-align: center;
