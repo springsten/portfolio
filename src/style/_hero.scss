@@ -1,5 +1,8 @@
 @use './variables' as v;
 .hero-section {
+  .mail {
+    color: v.$link-color-darker;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
